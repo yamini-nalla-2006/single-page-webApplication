@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Single Page WebApp</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: linear-gradient(120deg, #4facfe, #00f2fe);
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffdf6c;
+    }
+
+    /* Sections */
+    .section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #home {
+      background: url('https://picsum.photos/1200/800?grayscale') center/cover no-repeat;
+    }
+
+    #about {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    #projects {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    }
+
+    #contact {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+    }
+
+    /* Project Cards */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.2);
+      padding: 20px;
+      border-radius: 15px;
+      width: 150px;
+      text-align: center;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.4);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h1>Welcome to My WebApp</h1>
+    <p>This is a unique single-page application built only with HTML & CSS.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a BCA student exploring web development. This page shows how creative a website can be without JavaScript.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">🌦 Weather App</div>
+      <div class="card">🎟 Ticket Booking</div>
+      <div class="card">🤖 AI Chatbot</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:someone@example.com">someone@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 My Single Page WebApp</p>
+  </footer>
+</body>
+</html>
